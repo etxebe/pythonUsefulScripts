@@ -64,7 +64,6 @@ def return_results(filename, columns_arr):
     flag = True
     for col in columns_arr:
         col_repeats = are_repeats(read_column(filename, col))
-        # print(col_repeats)
         if col_repeats:
             print("W kolumnie", col, "sa zduplikowane rekordy:", col_repeats)
             flag = False
